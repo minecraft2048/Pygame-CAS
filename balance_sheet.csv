@@ -1,0 +1,20 @@
+ident,name,lv1cost,lv2cost,lv3cost,lv4cost,unlock,lv1money+,lv2money+,lv3money+,lv4money+,lv1money-,lv2money-,lv3money-,lv4money-,lv1money,lv2money,lv3money,lv4money,lv1pollution,lv2pollution,lv3pollution,lv4pollution,lv1waste,lv2waste,lv3waste,lv4waste
+convenience_store,Convenience store,10,20,40, None,supermarket,7,12,20,0,5,8,12,0,2,4,8,0,0.1,0.4,0.9,1.2,0.5,0.8,1,2
+supermarket,Supermarket,200,200,250,300,shopping_mall,100,250,300,375,90,220,280,240,10,30,20,135,0.3,0.7,1,1.4,1,1.5,2.5,3
+shopping_mall,Shopping Mall,500,450,550,800,None,300,450,600,750,160,280,430,660,140,170,170,90,0.5,0.9,1.2,1.8,1,2,3.5,4.5
+garden,Eco Park,250,300,400,450,None,0,0,0,0,60,100,150,210,-60,-100,-150,-210,-5,-15,-20,-25,0,0,0,0
+zoo,Zoo,250,250,275,300,None,70,150,250,400,70,120,200,250,0,30,50,150,1,1.5,2,3,1,1.5,2,3
+theme_park,Theme Park,550,500,600,800,None,200,450,600,650,210,380,510,550,-10,70,90,100,1,2,2,2.5,1,2,2.5,3
+school,School,100,None,None,None,None,0,0,0,0,50,0,0,0,-50,0,0,0,0,0,0,0,0.5,0,0,0
+house_small,Small house,50,None,None,None,house_mid,5,0,0,0,0,0,0,0,5,0,0,0,0.2,0,0,0,0.5,0,0,0
+house_mid,Medium house,100,None,None,None,house_big,6,0,0,0,0,0,0,0,6,0,0,0,0.6,0,0,0,1.2,0,0,0
+house_big,Big house,250,None,None,None,None,8,0,0,0,0,0,0,0,8,0,0,0,1.4,0,0,0,2,0,0,0
+waste_dump,Waste dump,50,50,100,200,recycler,0,0,0,0,70,160,200,240,-70,-160,-200,-240,0.5,1,2,3.5,0,0,0,0
+recycler,Recycling station,150,200,250,350,None,0,0,0,0,70,160,200,240,-70,-160,-200,-240,0.7,1.3,2.4,3.8,-10,-15,-25,-35
+reserve,Animal reserve,300,350,500,600,None,0,0,0,0,70,160,200,240,-70,-160,-200,-240,0,0,0,0,0.1,0.3,0.5,1
+power_plant,Coal power plant,400,500,650,700,solar_plant,0,0,0,0,40,80,130,160,-40,-80,-130,-160,1,2,3.5,5,0.5,0.8,1.2,1.8
+solar_plant,Solar power plant,650,650,700,800,wind_plant,0,0,0,0,20,50,100,120,-20,-50,-100,-120,0,0,0,0,0,0,0,0
+wind_plant,Wind turbine,750,650,700,850,None,0,0,0,0,30,70,110,140,-30,-70,-110,-140,0,0,0,0,0,0,0,0
+factory_car,Car factory,300,None,None,None,None,0,0,0,0,80,0,0,0,-80,0,0,0,0,0,0,0,0,0,0,0
+dealer_car,Car dealer,150,175,200,None,None,100,130,170,0,30,50,80,0,70,80,90,0,0,0,0,0,0.2,0.5,1,0
+office,Office building,200,None,None,None,None,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1.8,2.6,3.4

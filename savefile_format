@@ -1,0 +1,7 @@
+Save file format:
+
+Header:
+player_name, current_money, current_trash, current_pollution
+
+Core:
+building, level
