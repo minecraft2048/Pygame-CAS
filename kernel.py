@@ -12,7 +12,9 @@ UIDlist = []
 #main compute function  TODO: When done, only this should be in the kernel
 
 def simulate_core(UID,building_list,balance_sheet,init_money,init_pollution,init_waste):
-    building,buildinglvl=building_list[UID]
+    #print(UID)
+    #print(building_list)
+    building,buildinglvl,x,y=building_list[UID]
     #print(building)
     #print(buildinglvl)
     buildlist=balance_sheet[building]

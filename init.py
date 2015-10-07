@@ -29,6 +29,7 @@ balance_sheet = file_io.load_balance('balance_sheet.csv')
 #load savefile
 
 asdf = file_io.load(chosenplayer)
+#print (asdf)
 init = asdf[0]
 building_list = asdf[1]
 UIDlist = asdf[2]
