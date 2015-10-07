@@ -2,9 +2,12 @@ import csv
 import os
 import glob
 
+filepath = os.path.join(os.getcwd(),'savefile')
+
 def player_scan():
     player_list_raw = []
     player_list = []
+    os.chdir(filepath)
     for files in glob.glob('*.csv'):
         player_list_raw.append(files)
     player_list2 = [i for i in player_list_raw if '_init_value.csv' in i]
@@ -63,7 +66,7 @@ def player_name2filename(player_name):
     name = []
     building = player_name + '_building.csv'
     init = player_name + '_init_value.csv'
-    name = building,init
+    name =  os.path.join(filepath,building),os.path.join(filepath,init)
     return name
 
 def init_save(filename,player_name,data):
