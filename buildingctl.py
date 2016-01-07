@@ -1,15 +1,20 @@
-def addbuilding(UIDlist,building_list,current_money,building,x,y): #test
+def addbuilding(UIDlist,building_list,balance_sheet,current_money,building,x,y): #test
     UIDlist.sort()
-    print(UIDlist)
+    #print(UIDlist)
     UID = UIDlist[-1]
     UID = int(UID)
     UID = UID + 1
     UID = str(UID)
     UIDlist.append(UID)
+    cost = balance_sheet[building]
+    cost = cost[2]
+    cost = float(cost)
+    current_money = current_money - cost
     x = str(x)
     y = str(y)
     building_list[UID]=[building,'1',x,y]
     return UIDlist,building_list,current_money
+
 
 def removebuilding(UIDlist,building_list,UID):
     UIDlist.remove(UID)

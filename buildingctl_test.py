@@ -29,11 +29,11 @@ init = player[0]
 building_list = player[1]
 UIDlist = player[2]
 money,pollution,trash = init
-print(init)
-print(building_list)
-print(UIDlist)
+#print(init)
+#print(building_list)
+#print(UIDlist)
 
 #test buildingctl.addbuilding
 
-building_add = buildingctl.addbuilding(UIDlist, building_list, money, 'power_plant', 1, 2)
+building_add = buildingctl.addbuilding(UIDlist, building_list, balance_sheet, money, 'power_plant', 1, 2)
 print(building_add)

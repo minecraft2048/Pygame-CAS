@@ -34,7 +34,7 @@ chosenplayer = 'asdf'
 #load balance sheet
 
 balance_sheet = file_io.load_balance('balance_sheet.csv')
-#print(balance_sheet)
+print(balance_sheet)
 
 #load savefile
 
