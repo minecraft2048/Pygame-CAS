@@ -1,7 +1,7 @@
 UID,building,level,x,y
-1,power_plant,1,2,3
-4,theme_park,2,1,4
-2,garden,1,4,5
-0,convenience_store,1,1,1
 5,recycler,1,5,6
+1,power_plant,1,2,3
+2,garden,1,4,5
 3,theme_park,2,6,7
+0,convenience_store,1,1,1
+4,theme_park,2,1,4

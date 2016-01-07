@@ -1,6 +1,7 @@
 import csv
 import time
-
+import numpy
+import math
 #variables
 
 
@@ -37,4 +38,7 @@ def simulate(UIDlist,building_list,balance_sheet,money,pollution,trash):
         #print('Money-in is: '+str(money))
         #print('Pollution-in is: '+ str(pollution))
         #print('Trash-in is: '+ str(trash))
+    money= round(max(0,money),2)
+    pollution= round(max(0,pollution),2)
+    trash= round(max(0,trash),2)
     return(money,pollution,trash)

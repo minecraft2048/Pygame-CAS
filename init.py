@@ -4,8 +4,11 @@ import csv
 import time
 import kernel
 import file_io
+import pygame
 
-#define variables
+from pygame.locals import *
+
+#define simulation variables
 
 balance_sheet={}
 player_list={}
@@ -19,6 +22,13 @@ asdf = 0
 
 #test variables
 
+#define pygame variable
+
+FPS = 30
+WINDOWWIDTH = 640
+WINDOWHEIGHT = 480
+STATE = None #MAINMENU, LOAD
+
 chosenplayer = 'asdf'
 
 #load balance sheet
@@ -28,12 +38,11 @@ balance_sheet = file_io.load_balance('balance_sheet.csv')
 
 #load savefile
 
-asdf = file_io.load(chosenplayer)
+player = file_io.load(chosenplayer)
 #print (asdf)
-#say hi
-init = asdf[0]
-building_list = asdf[1]
-UIDlist = asdf[2]
+init = player[0]
+building_list = player[1]
+UIDlist = player[2]
 money,pollution,trash = init
 #print(init)
 #print(building_list)
@@ -46,7 +55,7 @@ while True:
     print('Money is: '+str(money))
     print('Pollution is: '+ str(pollution))
     print('Trash is: '+ str(trash))
-    if money < 0 or pollution > 100 or trash > 100:
+    if money <= 0 or pollution >= 100 or trash >= 100:
         print("Game over")
         break
-    time.sleep(1)
+    time.sleep(0.1)
