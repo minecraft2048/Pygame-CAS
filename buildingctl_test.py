@@ -33,7 +33,19 @@ money,pollution,trash = init
 #print(building_list)
 #print(UIDlist)
 
-#test buildingctl.addbuilding
+#test buildingctl.addbuilding - Add building
 
 building_add = buildingctl.addbuilding(UIDlist, building_list, balance_sheet, money, 'power_plant', 1, 2)
 print(building_add)
+
+UIDlist,building_list,money = building_add
+
+
+#test buildingctl.removebuilding - Remove building
+
+building_add = buildingctl.removebuilding(building_add, '3')
+print(building_add)
+
+
+
+#test buildingctl.upgradebuilding - Upgrade building

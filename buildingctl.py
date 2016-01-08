@@ -13,15 +13,17 @@ def addbuilding(UIDlist,building_list,balance_sheet,current_money,building,x,y):
     x = str(x)
     y = str(y)
     building_list[UID]=[building,'1',x,y]
-    return UIDlist,building_list,current_money
+    return [UIDlist,building_list,current_money]
 
+def removebuilding(building_add,UID):
+    """Removes building from the building list"""
+    #print(UIDlist)
+    #print(UID)
+    building_add[0].remove(UID)
+    building_add[1].pop(UID)
+    return [building_add[0],building_add[1]]
 
-def removebuilding(UIDlist,building_list,UID):
-    UIDlist.remove(UID)
-    building_list.pop(UID)
-    return UIDlist,building_list
-
-#def upgradebuilding(balance_sheet,current_money,building_list,UID):
-#    levelmap = {1:}
-#    next_level = int(building_list[UID][1])+1
+def upgradebuilding(balance_sheet,current_money,building_list,UID):
+    next_level = int(building_list[UID][1])+1
+    print(next_level)
 #    return
