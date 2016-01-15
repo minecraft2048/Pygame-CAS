@@ -38,7 +38,7 @@ def simulate(UIDlist,building_list,balance_sheet,money,pollution,trash):
         #print('Money-in is: '+str(money))
         #print('Pollution-in is: '+ str(pollution))
         #print('Trash-in is: '+ str(trash))
-    money= round(max(0,money),2)
+    money= round(max(0,money),2)    #keeps the value >= 0 and 2 decimal points 
     pollution= round(max(0,pollution),2)
     trash= round(max(0,trash),2)
     return(money,pollution,trash)

@@ -15,7 +15,6 @@ pollution=0
 trash=0
 init = 0
 asdf = 0
-coord = (1,2)
 chosenplayer = 'asdf'
 
 #load balance sheet
@@ -25,7 +24,7 @@ balance_sheet = file_io.load_balance('balance_sheet.csv')
 #load savefilev for testing
 
 player = file_io.load(chosenplayer)
-#print (asdf)
+print (player)
 init = player[0]
 building_list = player[1]
 UIDlist = player[2]
@@ -36,18 +35,18 @@ money,pollution,trash = init
 
 #test buildingctl.addbuilding - Add building
 
-building_add = buildingctl.addbuilding(UIDlist, building_list, balance_sheet, money, 'power_plant', 1, 2)
-print(building_add)
+player = buildingctl.addbuilding(player,balance_sheet,'power_plant', 1, 2)
+print(player)
 
-UIDlist,building_list,money = building_add
+#UIDlist,building_list,money = building_add
 
 
 #test buildingctl.removebuilding - Remove building
 
-building_add = buildingctl.removebuilding(building_add, '3')
-print(building_add)
+player = buildingctl.removebuilding(player, '3')
+print(player)
 
 #test buildingctl.upgradebuilding - Upgrade building
 
-building_add = buildingctl.upgradebuilding(balance_sheet, building_add, '2')
-print(building_add)
+player = buildingctl.upgradebuilding(balance_sheet, player, '2')
+print(player)
