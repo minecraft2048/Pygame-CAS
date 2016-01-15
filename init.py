@@ -45,7 +45,7 @@ building_list = player[1]
 UIDlist = player[2]
 money,pollution,trash = init
 #print(init)
-#print(building_list)
+print(building_list)
 #print(UIDlist)
 
 #main loop

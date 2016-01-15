@@ -10,11 +10,12 @@ player_list={}
 building_list={}
 building_add = []
 UIDlist = []
-money=10000
+money=10
 pollution=0
 trash=0
 init = 0
 asdf = 0
+coord = (1,2)
 chosenplayer = 'asdf'
 
 #load balance sheet
@@ -31,7 +32,7 @@ UIDlist = player[2]
 money,pollution,trash = init
 #print(init)
 #print(building_list)
-#print(UIDlist)
+#print(UIDlist)d
 
 #test buildingctl.addbuilding - Add building
 
@@ -46,6 +47,7 @@ UIDlist,building_list,money = building_add
 building_add = buildingctl.removebuilding(building_add, '3')
 print(building_add)
 
-
-
 #test buildingctl.upgradebuilding - Upgrade building
+
+building_add = buildingctl.upgradebuilding(balance_sheet, building_add, '2')
+print(building_add)
