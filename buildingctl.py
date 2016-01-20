@@ -49,3 +49,10 @@ def upgradebuilding(balance_sheet,player,UID):
         player[1][UID][1]= str(next_level)
         player[0][0] = current_money
         return player
+
+def movebuilding(player,UID,x,y):
+    x = str(x)
+    y = str(y)
+    player[1][UID][2] = x
+    player[1][UID][3] = y
+    return player
