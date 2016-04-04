@@ -14,8 +14,8 @@ green = (0,200,0)
 bright_red = (255,0,0)
 bright_green = (0,255,0)
 
-gameDisplay = pygame.display.set_mode((display_width,display_height))
-pygame.display.set_caption('A bit Racey')
+gameDisplay = pygame.display.set_mode((display_width,display_height)) #initialize screen
+pygame.display.set_caption('A bit Racey') #Program name
 clock = pygame.time.Clock()
 
 def clamp(n, minn, maxn):
