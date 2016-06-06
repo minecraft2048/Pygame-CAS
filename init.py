@@ -31,6 +31,16 @@ STATE = None #MAINMENU, LOAD
 
 chosenplayer = 'asdf'
 
+
+def clamp(n, minn, maxn):
+    '''Keep values in between values
+        Arguments:
+        n: Value
+        minn: Minimum value
+        maxn: Maximum value
+    '''
+    return max(min(maxn, n), minn)
+
 #load balance sheet
 
 balance_sheet = file_io.load_balance('balance_sheet.csv')
@@ -50,12 +60,12 @@ print(UIDlist)
 
 #main loop
 
-#while True:
-#    money,pollution,trash = kernel.simulate(UIDlist,building_list,balance_sheet,money,pollution,trash)
-#    print('Money is: '+str(money))
-#    print('Pollution is: '+ str(pollution))
-#    print('Trash is: '+ str(trash))
-#    if money <= 0 or pollution >= 100 or trash >= 100:
-#        print("Game over")
-#        break
-#    time.sleep(0.1)
+while True:
+    money,pollution,trash = kernel.simulate(UIDlist,building_list,balance_sheet,money,pollution,trash)
+    print('Money is: '+str(money))
+    print('Pollution is: '+ str(pollution))
+    print('Trash is: '+ str(trash))
+    if money <= 0 or pollution >= 100 or trash >= 100:
+        print("Game over")
+        break
+    time.sleep(0.1)
