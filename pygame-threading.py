@@ -22,3 +22,5 @@ d.start()
 while True:
     print(q.get())
     time.sleep(1)
+
+    
